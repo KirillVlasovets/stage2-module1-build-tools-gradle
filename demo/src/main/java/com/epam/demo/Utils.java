@@ -8,7 +8,7 @@ public class Utils {
             double number;
             try {
                 number = Double.parseDouble(srt);
-            } catch (NumberFormatException exception) {
+            } catch (NumberFormatException | NullPointerException exception) {
                 return false;
             }
             if (number <= 0) {
